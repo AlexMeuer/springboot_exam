@@ -1,4 +1,4 @@
-package exam;
+package exam.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

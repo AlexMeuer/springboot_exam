@@ -1,8 +1,8 @@
 package exam.controllers;
 
-import exam.MessageType;
+import exam.model.MessageType;
 import exam.services.SubscriptionService;
-import exam.SubscriptionNotFoundException;
+import exam.exceptions.SubscriptionNotFoundException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;

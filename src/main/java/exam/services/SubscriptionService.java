@@ -1,9 +1,9 @@
 package exam.services;
 
-import exam.Message;
-import exam.MessageType;
-import exam.Subscription;
-import exam.SubscriptionNotFoundException;
+import exam.model.Message;
+import exam.model.MessageType;
+import exam.model.Subscription;
+import exam.exceptions.SubscriptionNotFoundException;
 import reactor.bus.Event;
 import reactor.fn.Consumer;
 

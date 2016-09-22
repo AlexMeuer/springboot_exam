@@ -1,7 +1,7 @@
 package exam.services;
 
 
-import exam.Message;
+import exam.model.Message;
 
 public interface MessageService {
 

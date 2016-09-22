@@ -1,6 +1,7 @@
-package exam;
+package exam.model;
 
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import exam.util.SubscriptionSerializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,7 +46,7 @@ public class Subscription {
      * @param type The type of message to check.
      * @return The count of message received by the type or -1 if type is not subscribed to.
      */
-    int getNumberOfTimesReceived(final MessageType type) {
+    public int getNumberOfTimesReceived(final MessageType type) {
         if(typeMap.containsKey(type)) {
             return typeMap.get(type).get();
         }

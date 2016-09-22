@@ -1,4 +1,4 @@
-package exam;
+package exam.exceptions;
 
 public class SubscriptionNotFoundException extends Exception {
 
