@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @JsonSerialize(using = SubscriptionSerializer.class)
 public class Subscription {
-    private static final Logger log = LoggerFactory.getLogger(Subscription.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(Subscription.class);
     private final int id;
 
     /**
@@ -63,7 +63,7 @@ public class Subscription {
             typeMap.get(msg.getType()).incrementAndGet();
 
             // Print out that we received a message
-            log.info("Subscription{"+id+"} received: "+msg.getContent());
+            LOGGER.info("Subscription{"+id+"} received: "+msg.getContent());
         }
     }
 }
